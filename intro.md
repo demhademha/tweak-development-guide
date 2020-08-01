@@ -6,15 +6,14 @@ For these lessons, I will **not** expect you to know any code, but that you are 
 
 ## objectives for this corse 
 1. I'll teach you how to use a terminal 
-2. we'll move onto learning some bash 
+2. We'll move onto learning some bash 
 3. We'll then move onto installing and setting up theos
 4. We'll create a **very simple** tweak 
-5. we'll then move onto learning objective c
-6. we'll move onto decrypting apps, getting headers
+5. We'll then move onto learning objective c
+6. We'll move onto decrypting apps, getting headers
 7. We'll learn what to hook, 
-8. we'll make another tweak
+8. We'll make another tweak
 9. The tweak development gets more complex 
 10. We'll publish our tweak to github
 11. I'll teach you marketing 
-12. publishing our tweak to a repo like Packix  
-
+12. We’ll publish  our tweak to a repo like Packix
