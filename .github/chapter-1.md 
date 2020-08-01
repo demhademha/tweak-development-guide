@@ -20,7 +20,7 @@ Note: you may change the theme to black if you wish by tapping the settings butt
 Ok, we need to install an application called **filza** as we will use this as our file manager.
 ## why not use the regular files app?
 apple's files app doesn't give us access to the full file system of our device. Which means we need to use filza if we want to navigate our device's filesystem. In addition, filza is very easy to use. 
-## stemps to install filza. 
+## steps to install filza. 
 1. Open your package manager (I'll be using sileo)
 2. Tap on sources 
 3. Tap on eddit 
@@ -80,4 +80,5 @@ apple's files app doesn't give us access to the full file system of our device. 
 7. The default password is "alpine"
 8. it'll now say your device name followed by the word root
 9. You've successfully logged into your device using ssh
+## Few, we’ve completed getting ish, installing filza and you now  know how  to connect using ssh! # 
 
