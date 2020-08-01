@@ -16,5 +16,5 @@ For these lessons, I will **not** expect you to know any code, but that you are 
 9. The tweak development gets more complex 
 10. We'll publish our tweak to github
 11. I'll teach you marketing 
-12. publishing our tweak to a repo like packing 
+12. publishing our tweak to a repo like Packix  
 
