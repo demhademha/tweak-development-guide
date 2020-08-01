@@ -4,7 +4,7 @@ Well, in the most simplest terms, a tweak allows us to modify our ios device, we
 
 For these lessons, I will **not** expect you to know any code, but that you are **jailbroken** (I will be using [Odyssey](https://theodyssey.dev]) but feel free to use other jailbreak tools such as [checkra1n](https://checkra.in)) and that you have a few GB of storage to spare
 
-## objectives for this corse 
+## objectives for this course 
 1. I'll teach you how to use a terminal 
 2. We'll move onto learning some bash 
 3. We'll then move onto installing and setting up theos
