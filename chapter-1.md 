@@ -37,7 +37,7 @@ apple's files app doesn't give us access to the full file system of our device. 
 2. Type "apk add openssh"
 3. After it finishes, type "ssh localhost -p44"
 4. it'll say "the authenticity of xxx can't be established" type "yes"
-5. It'll say something like root@your IP address   password: (mine is root@19.168.0.24)   
+5. It'll say root@localhosts password
 6. The default password is "alpine"
 7. it'll now say your device name followed by the word root
 8. You've successfully logged into your device using ssh
@@ -68,9 +68,8 @@ apple's files app doesn't give us access to the full file system of our device. 
 9. it'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
 
-## connecting from a laptop 
-### for more advanced users / users who don't feel comfortable using their device to type 
-1. Install "openssh" (you will need to know how to install this for your own os)
+## connecting from a laptop over wifi 
+ 1. Install "openssh" (you will need to know how to install this for your own os)
 2. open "terminal" 
 3. On the device, install openssh (see above for jailbreak specific instructions)
  4.Open settings, > tap the I icon next to the    wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)
@@ -80,5 +79,14 @@ apple's files app doesn't give us access to the full file system of our device. 
 8. The default password is "alpine"
 9. it'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
+## using ssh over usb 
+1. Install [libimobiledevice](https://github.com/libimobiledevice/libimobiledevice) through your package manager, or compile it yourself
+2. Connect your device via usb (make sure you don't have any other devices connected)
+ 3. open "terminal"
+ 4. Type "iproxy 2222 22
+5. Open a new terminal and  type "ssh root@localhost -p2222" 
+6. it'll say "the authenticity of xxx can't be established" type "yes"
+7. It'll say root@localhosts password, the default is "alpine"
 ## Few, we’ve completed getting ish, installing filza and you now  know how  to connect using ssh! # 
 
+## let's move on!
