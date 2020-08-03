@@ -6,7 +6,7 @@
 * Install a file manager
 * connect to our device using ssh 
 # Setting up the terminal 
-So, a **terminal** is what allows us to communicate to our device,    its one of those black and white screens you normally associate with **hackers** (which your becoming) well sort of..
+So, a **terminal** is what allows us to communicate to our device,    its one of those black and white screens you normally associate with **hackers** (which you're becoming) well sort of..
 Its necessary we have a terminal application otherwise, we won't be able to build our tweaks, nor will we be able to do other  very important things like collaborating on [github](https://github.com) (like google docs for coders,) or to test wether our bash scripts work. All in all, without a terminal, we can't do anything much. 
 The terminal app that we are going to install works even in the jailed state (the unjailbroken state) providing us more functionality than others (such as newterm2) that only work when  you are jailbroken.) the terminal we are going to install is called "ish" and it emulates a  linux terminal on our device. 
 # steps to installing ish:
