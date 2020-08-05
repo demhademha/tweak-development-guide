@@ -3,5 +3,6 @@
 # chapters:
 * [introduction](https://github.com/demhademha/tweak-development-guide-/blob/master/intro.md)
 * [chapter-1](https://github.com/demhademha/tweak-development-guide-/blob/master/chapter-1.md)
+* [chapter2](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-2.md) 
 ## I hope to do a lesson once every few days, so star and watch this repo so you know, 
 ## if there are any issues, please report them in the **issue tracker** and I gladly accept **pull requests** !       
