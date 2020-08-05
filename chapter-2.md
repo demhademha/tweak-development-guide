@@ -30,13 +30,13 @@ If your answer is /var/mobile/Media then you are correct.
  Now you know how to navigate directories (I hope) and it's time to know what files are in a certain directory. 
  Firstly, change directory to /var/mobile (cd /var/mobile) and now, type "ls" 
   *ls stands for list: so typing it will list everything in that particular folder. In our case, that's everything of /var/mobile. Now, you should see the "Media" folder (again)
- Now, you have two ways you can get to the "Media folder, you could either type "cd /var/mobile/Media" or, you could use "cd ./Media" (which is a lot easier.) The "." Before the "/" tells cd to automatically put in /"var/mobile (or whatever the suffix is)  of that directory, and the "/" just tells cd to put in what comes after it (in our case, "Media")
-So, if we break it down even more, "." =the suffix of the directory, and "/" means the rest of the location. 
+ Now, you have two ways you can get to the "Media folder, you could either type "cd /var/mobile/Media" or, you could use "cd ./Media" (which is a lot easier.) The "." Before the "/" tells cd to automatically put in /"var/mobile (or whatever the prefix is)  of that directory, and the "/" just tells cd to put in what comes after it (in our case, "Media")
+So, if we break it down even more, "." =the prefix of the directory, and "/" means the rest of the location. 
 If we type  "cd .." means navigate to the previous  directory . 
 * the "pwd" command stands for print working directory: it will print where you currently are, in our case, /var/mobile. 
 
 * the command "touch" means create a new file, so "touch /var/tweaklog.txt" will create a txt file called tweaklog.
-* the suffix (end of a file) is extremely important. As different suffixes be interpreted in different ways. For example, a file with a  prefix  of .swift means a swift file, a file with the prefix .m means an objective file and a file with .html would be a html file. 
+* the suffix (end of a file) is extremely important. As different suffixes be interpreted in different ways. For example, a file with a  suffix  of .swift means a swift file, a file with the suffix .m means an objective-c file and a file with .html would be a html file. 
 
 Summary:
 You should now be able to comfortably navigate terminal, using cd, you should be able to list what files are in your directory, you should know the definition of the word directory,   you should be able to get which directory you are currently in, have an understanding of how to create a new file using touch and the significance of file extensions.  
