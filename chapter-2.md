@@ -13,12 +13,12 @@ this is where most of the scripts are kept for the jailbreak, and it  is **impor
 In the simplest terms, a script is a file that will run one or ore command at once. (It can be anything from being a calculator or an automatic repo builder, that asks you questions for example, what colour you want the get button to be, and then creates a repo where you just need to put your packages in.)
 4. Navigate until you see "sbreload"
 5. Tap on it, and press ok 
-Note: this will respring your device!
+**Note: this will respring your device!**
 Ok so as you can see, that took a long time, and to be honest it's not practical as you're forced to navigate filza.  
 well by using a terminal, we can make this significantly easier. 
 1. Ensure that you've used  ssh to login into your device see chapter 1 if you've forgotten how to do that
 2. Enter the command "sbreload"
-Note: this will respring your device 
+**Note: this will respring your device**
 So, the conclusion from this is that for many things, we can just use terminal, rather than relying on filza. the terminal eliminates the need for us to go to "/usr/bin/sbreload." 
 Ok, now you should have a basic understanding of what we just did, now let's learn  navigating around with just the terminal. 
 So the word "directory" is just another fancy word for folder. In terminal, when we say things like "go to x directory," we're just saying "go to x folder"
@@ -36,7 +36,7 @@ If we type  "cd .." means navigate to the previous  directory .
 * the "pwd" command stands for print working directory: it will print where you currently are, in our case, /var/mobile. 
 
 * the command "touch" means create a new file, so "touch /var/tweaklog.txt" will create a txt file called tweaklog.
-* the suffix (end of a file) is extremely important. As diffferent suffixes be interpreted in different ways. For example, a file with a  prefix  of .swift means a swift file, a file with the prefix .m means an objective file and a file with .html would be a html file. 
+* the suffix (end of a file) is extremely important. As different suffixes be interpreted in different ways. For example, a file with a  prefix  of .swift means a swift file, a file with the prefix .m means an objective file and a file with .html would be a html file. 
 
 Summary:
 You should now be able to comfortably navigate terminal, using cd, you should be able to list what files are in your directory, you should know the definition of the word directory,   you should be able to get which directory you are currently in, have an understanding of how to create a new file using touch and the significance of file extensions.  
