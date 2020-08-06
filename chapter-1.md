@@ -43,7 +43,7 @@ apple's files app doesn't give us access to the full file system of our device. 
 8. You've successfully logged into your device using ssh
 
 ## unc0ver, chimera and  electra (devices not using the procursus bootstrap)
-1. go to the cherries repo (added by default) and install "localssh" 
+1. go to the chariz repo (https://repo.chariz.com) and install "localssh" 
 2. Install "openssh" (unc0ver users go to the bingner repo, electra and chimera jailbreak users go to the chimera repo)
 3. Open settings, > tap the I icon next to the    wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)  
 4. Open ish, 
