@@ -30,7 +30,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 7. Go to the source
 8. Install filza (use normal filza and not the 64 bit version)
 9. Open filza, and tap on name (this will arrange everything alphabetically)
-### you've successfully installed filza, now time to connect to our device over ssh
+### You've successfully installed filza, now time to connect to our device over ssh
 ## Note: follow the jailbreak that applies to you:
 ## Checkra1n (not odysseyra1n)
 1. Open "ish" 
