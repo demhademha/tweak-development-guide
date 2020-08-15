@@ -1,7 +1,7 @@
-# setting everything up 
+# Setting everything up 
 ## So you've read the [intro](https://github.com/demhademha/tweak-development-guide/blob/master/intro.md) and you've made it to the first chapter! Well done!
 ## Let's get started already!
-# what we'll do in this chapter 
+# What we'll do in this chapter 
 * Install a terminal application 
 * Install a file manager
 * Connect to our device using ssh 
@@ -9,7 +9,7 @@
 So, a **terminal** is what allows us to communicate to our device, it's one of those black and white screens you normally associate with **hackers** (which you're becoming) well sort of...\
 It's necessary we have a terminal application otherwise, we won't be able to build our tweaks, nor will we be able to do other  very important things like collaborating on [github](https://github.com) (like google docs for coders,) or to test wether our bash scripts work. All in all, without a terminal, we can't do anything much.\
 The terminal app that we are going to install works even in the jailed state (the unjailbroken state) providing us more functionality than others (such as newterm2) that only work when you are jailbroken). The terminal we are going to install is called "ish" and it emulates a linux terminal on our device. 
-# steps to installing ish:
+# Steps to installing ish:
 1. Install TestFlight from the AppStore or visit [here](https://apps.apple.com/gb/app/testflight/id899247664) 
 2. Visit [here](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjZjo2jx_rqAhUuQkEAHS6JBT4QFjADegQIAxAB&url=https%3A%2F%2Ftestflight.apple.com%2Fjoin%2F97i7KM8O&usg=AOvVaw1I9cM-8axRNb1XRvTgM7AA)
 3. Tap on "accept" 
@@ -20,7 +20,7 @@ Note: you may change the theme to black if you wish by tapping the settings butt
 Ok, we need to install an application called **filza** as we will use this as our file manager.
 ## Why not use the regular files app?
 Apple's files app doesn't give us access to the full file system of our device. Which means we need to use filza if we want to navigate our device's filesystem. In addition, filza is very easy to use. 
-## steps to install filza.
+## Steps to install filza
 1. Open your package manager (I'll be using sileo)
 2. Tap on "sources" 
 3. Tap on "eddit" 
@@ -68,7 +68,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 9. It'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
 
-## connecting from a laptop over wifi 
+## Connecting from a laptop over wifi 
 1. Install "openssh" (you will need to know how to install this for your own os)
 2. Open "terminal" 
 3. On the device, install openssh (see above for jailbreak specific instructions)
@@ -80,7 +80,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 9. It'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
 
-## using ssh over usb 
+## Using ssh over usb 
 1. Install [libimobiledevice](https://github.com/libimobiledevice/libimobiledevice) through your package manager, or compile it yourself
 2. Connect your device via usb (make sure you don't have any other devices connected)
 3. Open "terminal"
