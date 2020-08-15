@@ -90,4 +90,4 @@ Apple's files app doesn't give us access to the full file system of our device. 
 7. It'll say root@localhost's password, the default is `alpine`
 ## Few, we’ve completed getting ish, installing filza and you now know how to connect using ssh!
 
-## let's move on!
+## Let's move on!
