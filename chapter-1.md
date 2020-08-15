@@ -4,14 +4,14 @@
 # what we'll do in this chapter 
 * Install a terminal application 
 * Install a file manager
-* connect to our device using ssh 
+* Connect to our device using ssh 
 # Setting up the terminal 
 So, a **terminal** is what allows us to communicate to our device, it's one of those black and white screens you normally associate with **hackers** (which you're becoming) well sort of...\
 It's necessary we have a terminal application otherwise, we won't be able to build our tweaks, nor will we be able to do other  very important things like collaborating on [github](https://github.com) (like google docs for coders,) or to test wether our bash scripts work. All in all, without a terminal, we can't do anything much.\
 The terminal app that we are going to install works even in the jailed state (the unjailbroken state) providing us more functionality than others (such as newterm2) that only work when you are jailbroken). The terminal we are going to install is called "ish" and it emulates a linux terminal on our device. 
 # steps to installing ish:
 1. Install TestFlight from the AppStore or visit [here](https://apps.apple.com/gb/app/testflight/id899247664) 
-2. visit [here](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjZjo2jx_rqAhUuQkEAHS6JBT4QFjADegQIAxAB&url=https%3A%2F%2Ftestflight.apple.com%2Fjoin%2F97i7KM8O&usg=AOvVaw1I9cM-8axRNb1XRvTgM7AA)
+2. Visit [here](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjZjo2jx_rqAhUuQkEAHS6JBT4QFjADegQIAxAB&url=https%3A%2F%2Ftestflight.apple.com%2Fjoin%2F97i7KM8O&usg=AOvVaw1I9cM-8axRNb1XRvTgM7AA)
 3. Tap on "accept" 
 4. Tap on "install" 
 5. Open ish, and it will say "welcome to alpine"
