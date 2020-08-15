@@ -1,13 +1,13 @@
 # setting everything up 
-## so you've read the [intro](https://github.com/demhademha/tweak-development-guide/blob/master/intro.md) and you've made it to the first chapter! well done!
+## So you've read the [intro](https://github.com/demhademha/tweak-development-guide/blob/master/intro.md) and you've made it to the first chapter! well done!
 ## let's get started already!
 # what we'll do in this chapter 
 * Install a terminal application 
 * Install a file manager
 * connect to our device using ssh 
 # Setting up the terminal 
-So, a **terminal** is what allows us to communicate to our device, it's one of those black and white screens you normally associate with **hackers** (which you're becoming) well sort of..
-It's necessary we have a terminal application otherwise, we won't be able to build our tweaks, nor will we be able to do other  very important things like collaborating on [github](https://github.com) (like google docs for coders,) or to test wether our bash scripts work. All in all, without a terminal, we can't do anything much. 
+So, a **terminal** is what allows us to communicate to our device, it's one of those black and white screens you normally associate with **hackers** (which you're becoming) well sort of...\
+It's necessary we have a terminal application otherwise, we won't be able to build our tweaks, nor will we be able to do other  very important things like collaborating on [github](https://github.com) (like google docs for coders,) or to test wether our bash scripts work. All in all, without a terminal, we can't do anything much.\
 The terminal app that we are going to install works even in the jailed state (the unjailbroken state) providing us more functionality than others (such as newterm2) that only work when you are jailbroken). The terminal we are going to install is called "ish" and it emulates a linux terminal on our device. 
 # steps to installing ish:
 1. Install TestFlight from the AppStore or visit [here](https://apps.apple.com/gb/app/testflight/id899247664) 
@@ -18,8 +18,8 @@ The terminal app that we are going to install works even in the jailed state (th
 Note: you may change the theme to black if you wish by tapping the settings button in ish
 ## You've done it, you've installed a terminal app on your device, time to move on
 Ok, we need to install an application called **filza** as we will use this as our file manager.
-## why not use the regular files app?
-apple's files app doesn't give us access to the full file system of our device. Which means we need to use filza if we want to navigate our device's filesystem. In addition, filza is very easy to use. 
+## Why not use the regular files app?
+Apple's files app doesn't give us access to the full file system of our device. Which means we need to use filza if we want to navigate our device's filesystem. In addition, filza is very easy to use. 
 ## steps to install filza.
 1. Open your package manager (I'll be using sileo)
 2. Tap on "sources" 
@@ -34,11 +34,11 @@ apple's files app doesn't give us access to the full file system of our device. 
 ## Note: follow the jailbreak that applies to you:
 ## Checkra1n (not odysseyra1n)
 1. Open "ish" 
-2. Type "apk add openssh"
-3. After it finishes, type "ssh localhost -p44"
+2. Type `apk add openssh`
+3. After it finishes, type `ssh localhost -p44`
 4. It'll say "the authenticity of xxx can't be established" type "yes"
-5. It'll say root@localhosts password
-6. The default password is "alpine"
+5. It'll say root@localhost's password
+6. The default password is `alpine`
 7. It'll now say your device name followed by the word root
 8. You've successfully logged into your device using ssh
 
@@ -47,11 +47,11 @@ apple's files app doesn't give us access to the full file system of our device. 
 2. Install "openssh" (unc0ver users go to the bingner repo, electra and chimera jailbreak users go to the chimera repo)
 3. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)  
 4. Open ish, 
-5. Type "apk add openssh"
-6. After it finishes, type "ssh your IP address -p2222"
+5. Type `apk add openssh`
+6. After it finishes, type `ssh your IP address -p2222`
 7. It'll say "the authenticity of xxx can't be established" type "yes"
-8. It'll say something like root@your IP address   password: (mine is root@192.168.0.24)   
-9. The default password is "alpine"
+8. It'll say something like root@your IP address password: (mine is root@192.168.0.24)   
+9. The default password is `alpine`
 10. It'll now say your device name followed by the word root
 11. You've successfully logged into your device using ssh
 
@@ -60,11 +60,11 @@ apple's files app doesn't give us access to the full file system of our device. 
 1. Install "openssh" (go to the procursus repo)
 2. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)  
 3. Open ish, 
-4. Type "apk add "openssh"
-5. After it finishes, type "ssh your IP address  -p2222"
+4. Type `apk add "openssh`
+5. After it finishes, type `ssh your IP address  -p2222`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
 7. It'll say something like root@your IP address password: (mine is root@192.168.0.24)   
-8. The default password is "alpine"
+8. The default password is `alpine`
 9. It'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
 
@@ -73,10 +73,10 @@ apple's files app doesn't give us access to the full file system of our device. 
 2. Open "terminal" 
 3. On the device, install openssh (see above for jailbreak specific instructions)
 4. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)
-5. Type "ssh root@your IP address"
+5. Type `ssh root@your IP address`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
-7. It'll say something like root@your IP address  password: (mine is root@demhademha)   
-8. The default password is "alpine"
+7. It'll say something like root@your IP address password: (mine is root@demhademha)   
+8. The default password is `alpine`
 9. It'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
 
@@ -84,10 +84,10 @@ apple's files app doesn't give us access to the full file system of our device. 
 1. Install [libimobiledevice](https://github.com/libimobiledevice/libimobiledevice) through your package manager, or compile it yourself
 2. Connect your device via usb (make sure you don't have any other devices connected)
 3. Open "terminal"
-4. Type "iproxy 2222 22
-5. Open a new terminal and type "ssh root@localhost -p2222" 
+4. Type `iproxy 2222 22`
+5. Open a new terminal and type `ssh root@localhost -p2222`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
-7. It'll say root@localhosts password, the default is "alpine"
+7. It'll say root@localhost's password, the default is `alpine`
 ## Few, we’ve completed getting ish, installing filza and you now know how to connect using ssh!
 
 ## let's move on!
