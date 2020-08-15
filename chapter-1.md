@@ -60,7 +60,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 1. Install "openssh" (go to the procursus repo)
 2. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)  
 3. Open ish, 
-4. Type `apk add "openssh`
+4. Type `apk add openssh`
 5. After it finishes, type `ssh your IP address  -p2222`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
 7. It'll say something like root@your IP address password: (mine is root@192.168.0.24)   
