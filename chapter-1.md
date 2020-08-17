@@ -45,27 +45,25 @@ Apple's files app doesn't give us access to the full file system of our device. 
 ## unc0ver, chimera and  electra (devices not using the procursus bootstrap)
 1. Go to halo_michael's repo: (https://halo-michael.github.io/repo) and install "localssh" 
 2. Install "openssh" (unc0ver users go to the bingner repo, electra and chimera jailbreak users go to the chimera repo)
-3. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)  
-4. Open ish, 
-5. Type `apk add openssh`
-6. After it finishes, type `ssh localhost -p2222`
-7. It'll say "the authenticity of xxx can't be established" type "yes"
-8. It'll say root@localhost  password
-9. The default password is `alpine`
-10. It'll now say your device name followed by the word root
-11. You've successfully logged into your device using ssh
-
-## procursus based jailbreaks (odyssey, odysseyra1n)
-
-1. Install "openssh" (go to the procursus repo)
-2. Open ish, 
-3. Type `apk add openssh`
-4. After it finishes, type `ssh localhost -p2222`
+3. Open ish
+4. Type `apk add openssh`
+5. After it finishes, type `ssh localhost -p2222`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
 7. It'll say root@localhost password
 8. The default password is `alpine`
 9. It'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
+
+## procursus based jailbreaks (odyssey, odysseyra1n)
+1. Install "openssh" (go to the procursus repo)
+2. Open ish
+3. Type `apk add openssh`
+4. After it finishes, type `ssh localhost -p2222`
+5. It'll say "the authenticity of xxx can't be established" type "yes"
+6. It'll say root@localhost password
+7. The default password is `alpine`
+8. It'll now say your device name followed by the word root
+9. You've successfully logged into your device using ssh
 
 ## Connecting from a laptop over wifi 
 1. Install "openssh" (you will need to know how to install this for your own os)
@@ -73,6 +71,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 3. On the device, install openssh (see above for jailbreak specific instructions)
 4. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)
 5. Type `ssh root@your IP address`
+**note: checkra1n (not odysseyra1n) users type `ssh root@your IP address -p44` instead**
 6. It'll say "the authenticity of xxx can't be established" type "yes"
 7. It'll say root@your IP address password: (mine is root@demhademha)   
 8. The default password is `alpine`
@@ -84,7 +83,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 2. Connect your device via usb (make sure you don't have any other devices connected)
 3. Open "terminal"
 4. Type `iproxy 2222 2222`
-**note: checkra1n (not odysseyra1n) users type "iproxy 2222 44"**
+**note: checkra1n (not odysseyra1n) users type `iproxy 2222 44` instead**
 5. Open a new terminal and type `ssh root@localhost -p2222`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
 7. It'll say root@localhost's password, the default is `alpine`
