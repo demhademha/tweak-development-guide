@@ -48,9 +48,9 @@ Apple's files app doesn't give us access to the full file system of our device. 
 3. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)  
 4. Open ish, 
 5. Type `apk add openssh`
-6. After it finishes, type `ssh your IP address -p2222`
+6. After it finishes, type `ssh localhost -p2222`
 7. It'll say "the authenticity of xxx can't be established" type "yes"
-8. It'll say something like root@your IP address password: (mine is root@192.168.0.24)   
+8. It'll say root@localhost  password
 9. The default password is `alpine`
 10. It'll now say your device name followed by the word root
 11. You've successfully logged into your device using ssh
@@ -58,12 +58,11 @@ Apple's files app doesn't give us access to the full file system of our device. 
 ## procursus based jailbreaks (odyssey, odysseyra1n)
 
 1. Install "openssh" (go to the procursus repo)
-2. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)  
-3. Open ish, 
-4. Type `apk add openssh`
-5. After it finishes, type `ssh your IP address  -p2222`
+2. Open ish, 
+3. Type `apk add openssh`
+4. After it finishes, type `ssh localhost -p2222`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
-7. It'll say something like root@your IP address password: (mine is root@192.168.0.24)   
+7. It'll say root@localhost password
 8. The default password is `alpine`
 9. It'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
@@ -75,7 +74,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 4. Open settings, > tap the I icon next to the wifi you are connected and remember the IP address, for example, 192.168.0.24 (yours might be different)
 5. Type `ssh root@your IP address`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
-7. It'll say something like root@your IP address password: (mine is root@demhademha)   
+7. It'll say root@your IP address password: (mine is root@demhademha)   
 8. The default password is `alpine`
 9. It'll now say your device name followed by the word root
 10. You've successfully logged into your device using ssh
@@ -84,7 +83,8 @@ Apple's files app doesn't give us access to the full file system of our device. 
 1. Install [libimobiledevice](https://github.com/libimobiledevice/libimobiledevice) through your package manager, or compile it yourself
 2. Connect your device via usb (make sure you don't have any other devices connected)
 3. Open "terminal"
-4. Type `iproxy 2222 22`
+4. Type `iproxy 2222 2222`
+**note: checkra1n (not odysseyra1n) users type "iproxy 2222 44"**
 5. Open a new terminal and type `ssh root@localhost -p2222`
 6. It'll say "the authenticity of xxx can't be established" type "yes"
 7. It'll say root@localhost's password, the default is `alpine`
