@@ -1,4 +1,5 @@
-# Creating ssh keys
+# A world of ssh passwords and keys 
+
 
 ## Objectives for this lesson
 * Change the mobile user password
