@@ -9,7 +9,7 @@
 * How to add the ssh key to the target device
 
 ## Why changing the ssh passwords is vital
-So, the majority of you will have a password which prevents prying eyes from just going into your device, and taking a look at all of your sensitive information. Well, as soon as we've installed openssh on our device, it only takes someone to find our IP address, and enter the password `alpine` and they've gained full access to the device.
+So, the majority of you will have a password which prevents prying eyes from just going into your device, and taking a look at all of your sensitive information. Well, as soon as we've installed openssh on our device, it only takes someone (who is on the same wifi network) to find our IP address, and enter the password `alpine` and they've gained full access to the device.
 as soon as a person has remote access over ssh, they can do whatever they want, but here's a few examples:
 * they could bootloop your device
 * they could fill up your device storage (for example, sending lots of IPSWs)
@@ -18,7 +18,7 @@ as soon as a person has remote access over ssh, they can do whatever they want, 
 However, the most simplest way we can fix this is by changing both our root and mobile passwords.
 
 ## What is the difference between the root and the mobile user?
-On iOS devices, there are two users, root and mobile. Mobile has less privileges than root, meaning that you would have to run `sudo` in order to do higher privileged things. For example, if I tried to delete a file which is write protected as a mobile user, I might have to use `sudo` in order to achieve that. However, a root user is free to do what they wanted. But access to either by   a malicious person could be troublesome for us, so let's secure that device.
+On iOS devices, the main two users are root and mobile. Mobile has less privileges than root, meaning that you would have to run `sudo` in order to do higher privileged things. For example, if I tried to delete a file which is write protected as a mobile user, I might have to use `sudo` in order to achieve that. However, a root user is free to do what they wanted. But access to either by   a malicious person could be troublesome for us, so let's secure that device.
 
 ## Changing the root password
 1. Make sure that you've logged in with ssh, see [chapter 1](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-1.md)
