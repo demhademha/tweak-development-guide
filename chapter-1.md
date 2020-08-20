@@ -23,7 +23,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 ## Steps to install filza
 1. Open your package manager (I'll be using sileo)
 2. Tap on `sources`
-3. Tap on `eddit`
+3. Tap on `edit`
 4. Tap on `add`
 5. Insert the following url: `https://data.tigisoftware.com/cydia/`
 6. Add the source
