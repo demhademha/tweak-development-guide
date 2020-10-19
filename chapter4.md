@@ -12,13 +12,13 @@ Next, type the following `alias respring="sbreload"`, you can now type `respring
 So, as you can see, we created an alias named respring, that carries out the command sbreload. If we now type `respring` in terminal the command is not found.
 
 So, we can now see that the aliases are not persistent. So, how do we make this persistent?\
-The very first thing is we need to find out if we are using zsh or bash. (You're wondering what bash and zsh are? They are both shells, shells are interfaces that gather input from you and executes those commands.)
+The very first thing we need to find out is whether we are using zsh or bash. (You're wondering what bash and zsh are? They are both shells. A shell is a interface to access an operating system, it allows you to input commands.)
 
 The way we will do this is by typing `echo $SHELL`.
 This will return either `/usr/bin/bash` or `/usr/bin/zsh`, make sure to remember which one is displayed for you.
 
 Now, open Filza and navigate to `/var/mobile`, you should see `.profile` (for bash) or `.zprofile` (for zsh), and open the correct file according to your shell. However, if the file isn't displayed, you'll need to manually create the `.profile` or the `.zprofile` file yourself.
-Once you're in the correct file, go ahead and copy the following lines of code:
+Once you're in the correct file, go ahead, copy and paste the following lines of code:
 ```
 alias github="~/github"
 alias tweaks="~/tweaks"
