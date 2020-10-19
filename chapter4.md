@@ -18,7 +18,7 @@ The way we will do this is by typing `echo $SHELL`.
 This will return either `/usr/bin/bash` or `/usr/bin/zsh`, make sure to remember which one is displayed for you.
 
 Now, open Filza and navigate to `/var/mobile`, you should see `.profile` (for bash) or `.zprofile` (for zsh), and open the correct file according to your shell. However, if the file isn't displayed, you'll need to manually create the `.profile` or the `.zprofile` file yourself.
-Once you're in the correct folder, go ahead and copy the following lines of code:
+Once you're in the correct file, go ahead and copy the following lines of code:
 ```
 alias github="~/github"
 alias tweaks="~/tweaks"
