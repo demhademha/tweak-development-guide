@@ -20,8 +20,8 @@ This will return either `/usr/bin/bash` or `/usr/bin/zsh`, make sure to remember
 Now, open Filza and navigate to `/var/mobile`, you should see `.profile` (for bash) or `.zprofile` (for zsh), and open the correct file according to your shell. However, if the file isn't displayed, you'll need to manually create the `.profile` or the `.zprofile` file yourself.
 Once you're in the correct file, go ahead, copy and paste the following lines of code:
 ```
-alias github="~/github"
-alias tweaks="~/tweaks"
+alias github="cd ~/github"
+alias tweaks="cd ~/tweaks"
 export $THEOS=~/Theos
 ```
 Note: `$THEOS` is a variable, we have set this up now to save time later when we'll install Theos.
