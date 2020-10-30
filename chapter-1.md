@@ -14,7 +14,8 @@ The terminal app that we are going to install works even in the jailed state (th
 2. Visit [here](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjZjo2jx_rqAhUuQkEAHS6JBT4QFjADegQIAxAB&url=https%3A%2F%2Ftestflight.apple.com%2Fjoin%2F97i7KM8O&usg=AOvVaw1I9cM-8axRNb1XRvTgM7AA)
 3. Tap on `accept`
 4. Tap on `install`
-5. Open ish, and it will say `welcome to alpine`
+5. Open ish, and you should see something like this `iPhone:~# `
+5. Type `wget -qO- http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86/apk-tools-static-2.10.5-r1.apk | tar -xz sbin/apk.static && ./sbin/apk.static add apk-tools && rm sbin/apk.static` and wait until it finishes.
 Note: you may change the theme to black if you wish by tapping the settings button in ish
 ## You've done it, you've installed a terminal app on your device, time to move on
 Ok, we need to install an application called **filza** as we will use this as our file manager.
