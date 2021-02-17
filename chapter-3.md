@@ -18,7 +18,7 @@ as soon as a person has remote access over ssh, they can do whatever they want, 
 However, the most simplest way we can fix this is by changing both our root and mobile passwords.
 
 ## What is the difference between the root and the mobile user?
-On iOS devices, the main two users are root and mobile. Mobile has less privileges than root, meaning that you would have to run `sudo` in order to do higher privileged things. For example, if I tried to delete a file which is write protected as a mobile user, I might have to use `sudo` in order to achieve that. However, a root user is free to do what they wanted. But access to either by   a malicious person could be troublesome for us, so let's secure that device.
+On iOS devices, the main two users are root and mobile. Mobile has less privileges than root, meaning that you would have to run `sudo` in order to do higher privileged things. For example, if I tried to delete a file which is write protected as a mobile user, I might have to use `sudo` in order to achieve that. However, a root user is free to do what they want. But access  by   a malicious person could be troublesome for us, so let's secure the device.
 
 ## Changing the root password
 1. Make sure that you've logged in with ssh, see [chapter 1](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-1.md)
@@ -58,7 +58,7 @@ It will then say: \
 `Enter passphrase (empty for no passphrase):`. \
 Type a passphrase if you wish (strongly recommended)
 5. Confirm the passphrase if you entered it, otherwise just press enter again
-You've successfully created an ssh key, now let's transfer our door (public key) to our iOS device.
+You've successfully created an ssh key, now let's transfer our padlock (public key) to our iOS device.
 
 ## Transfering the public key
 1. Type in `ssh-copy-id` followed by how you would login with ssh, for example, `ssh-copy-id root@localhost -p2222`\
@@ -76,6 +76,28 @@ It will then say
 Number of key(s) added: 1
 Now try logging into the machine, with: "ssh -p '2222' 'localhost'" and check to make sure that only the key(s) you wanted were added.
 ```
-3. Now, login normally over ssh, **you should not be asked for a password**
+3. Now, login normally over ssh, **you should not be asked for a password** but rather, for your ssh key pass pharase (if you set one)
 4. Finally, do the same again, but this time do this for your mobile user (`ssh mobile@localhost` or `ssh mobile@youripadress`)
+## Makeing ssh remember our pass phrase
+You may find it cumbersome to continuously enter your pass phrase. To fix this, let's make sure that ssh auto fills it in for us. 
+1. From terminal, type:
+```
+eval "$(ssh-agent -s)"
+```
+the output should be something like this:
+```
+Agent pid 37
+``` 
+This initiates the ssh agent. 
+Finally, to add the ssh key to the agent, type the following:
+```
+ssh-agent add /path/to/your/ssh/directory/.ssh/id_rsa 
+```
+for example:
+```
+ssh-agent add /root/.ssh/id_rsa
+```
+If you are unsure where this folder is, it was specified when creating an ssh key with ssh-keygen.
+Finally, you should be prompted for your pass phrase. Upon entering it, ssh will manually enter it for you. 
+To test this, try to login again with ssh. 
 ## You've finally changed your root and mobile passwords, understood how public and private keys work, generated a public and a private key, and transferred the public key to the device.

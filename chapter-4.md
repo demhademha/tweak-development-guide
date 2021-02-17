@@ -22,7 +22,7 @@ Once you're in the correct file, go ahead, copy and paste the following lines of
 ```
 alias github="cd ~/github"
 alias tweaks="cd ~/tweaks"
-export THEOS=~/Theos
+export THEOS=~/theos
 ```
 Note: `$THEOS` is a variable, we have set this up now to save time later when we'll install Theos.
 
