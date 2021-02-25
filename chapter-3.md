@@ -91,11 +91,11 @@ Agent pid 37
 This initiates the ssh agent. 
 Finally, to add the ssh key to the agent, type the following:
 ```
-ssh-agent add /path/to/your/ssh/directory/.ssh/id_rsa 
+ssh-add /path/to/your/ssh/directory/.ssh/id_rsa 
 ```
 for example:
 ```
-ssh-agent add /root/.ssh/id_rsa
+ssh-add /root/.ssh/id_rsa
 ```
 If you are unsure where this folder is, it was specified when creating an ssh key with ssh-keygen.
 Finally, you should be prompted for your pass phrase. Upon entering it, ssh will manually enter it for you. 
