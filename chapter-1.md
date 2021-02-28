@@ -12,7 +12,6 @@ The terminal app that we are going to install works even in the jailed state (th
 # Steps to installing ish:
 1. Install iSH Shell from the AppStore or visit [here](https://apps.apple.com/us/app/ish-shell/id1436902243)
 2. Open ish, and you should see something like this `iPhone:~# `
-3. Type `wget -qO- http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86/apk-tools-static-2.10.5-r1.apk | tar -xz sbin/apk.static && ./sbin/apk.static add apk-tools && rm sbin/apk.static` and wait until it finishes.
 Note: you may change the theme to black if you wish by tapping the settings button in ish
 ## You've done it, you've installed a terminal app on your device, time to move on
 Ok, we need to install an application called **filza** as we will use this as our file manager.
