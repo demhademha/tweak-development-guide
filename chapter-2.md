@@ -1,4 +1,5 @@
-## Learning the terminal
+# Learning the terminal
+
 ## Here's a joke for you
 Why do people always miss their planes? Keep reading to find the answer.
 

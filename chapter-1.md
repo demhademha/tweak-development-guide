@@ -1,22 +1,28 @@
 # Setting everything up
+
 ## So you've read the [intro](https://github.com/demhademha/tweak-development-guide/blob/master/intro.md) and you've made it to the first chapter! Well done!
 ## Let's get started already!
-# What we'll do in this chapter
+
+## What we'll do in this chapter
 * Install a terminal application
 * Install a file manager
 * Connect to our device using ssh
-# Setting up the terminal
+
+## Setting up the terminal
 So, a **terminal** is what allows us to communicate to our device, it's one of those black and white screens you normally associate with **hackers** (which you're becoming) well sort of...\
 It's necessary we have a terminal application otherwise, we won't be able to build our tweaks, nor will we be able to do other very important things like collaborating on [GitHub](https://github.com) (like Google Docs for coders,) or to test whether our bash scripts work. All in all, without a terminal, we can't do anything much.\
-The terminal app that we are going to install works even in the jailed state (the unjailbroken state) providing us more functionality than others (such as newterm2) that only work when you are jailbroken). The terminal we are going to install is called `ish` and it emulates a linux terminal on our device. 
-# Steps to installing ish:
+The terminal app that we are going to install works even in the jailed state (the unjailbroken state) providing us more functionality than others (such as newterm2) that only work when you are jailbroken). The terminal we are going to install is called `ish` and it emulates a linux terminal on our device.
+
+## Steps to install ish
 1. Install iSH Shell from the AppStore or visit [here](https://apps.apple.com/us/app/ish-shell/id1436902243)
 2. Open ish, and you should see something like this `iPhone:~# `
 Note: you may change the theme to black if you wish by tapping the settings button in ish
 ## You've done it, you've installed a terminal app on your device, time to move on
 Ok, we need to install an application called **filza** as we will use this as our file manager.
+
 ## Why not use the regular files app?
 Apple's files app doesn't give us access to the full file system of our device. Which means we need to use filza if we want to navigate our device's filesystem. In addition, filza is very easy to use.
+
 ## Steps to install filza
 1. Open your package manager (I'll be using sileo)
 2. Tap on `sources`
@@ -29,6 +35,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 9. Open filza, and tap on name (this will arrange everything alphabetically)
 ### You've successfully installed filza, now time to connect to our device over ssh
 ## Note: follow the jailbreak that applies to you:
+
 ## Checkra1n (not odysseyra1n)
 1. Open `ish`
 2. Type `apk add openssh`
@@ -84,6 +91,7 @@ Apple's files app doesn't give us access to the full file system of our device. 
 5. Open a new terminal and type `ssh root@localhost -p2222`
 6. It'll say `the authenticity of xxx can't be established` type `yes`
 7. It'll say root@localhost's password, the default is `alpine`
+
 ## Few, we’ve completed getting ish, installing filza and you now know how to connect using ssh!
 
 ## Let's move on!

@@ -1,4 +1,5 @@
 # Chapter 4
+
 ## Aliases and Folders
 In this chapter, we'll create the folders and the aliases that this guide will comprise of.
 
