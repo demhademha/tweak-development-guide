@@ -1,6 +1,10 @@
 # Chapter 5 - Setting up the compiler
 By the end of this lesson, you will have a working c compiler.
-
+## Before begining, unc0ver users and checkra1n users (not odysseyra1n users follow the following steps):
+1: ssh as root
+2 Type  `apt update && apt install -y sudo && chmod 0440 /etc/sudoers && visudo /etc/sudoers`
+3: un-comment **# Defaults targetpw** and **# ALL ALL=(ALL) ALL** and save the file
+**note:** to remove the comment, simply remove the `#`. **Do not** remove the full line  
 ## What is a compiler?
 A compiler is the piece of software which takes your source code, (the thing humans can read) and converts it into machine code (what the device understands). <br>
 The compiler we will be using is the clang compiler. It can be installed from your package manager. Alternatively, it can be installed directly from terminal by running `sudo apt update && sudo apt install clang` (make sure to ssh into your device first).
