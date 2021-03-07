@@ -90,6 +90,8 @@ Apple's files app doesn't give us access to the full file system of our device. 
 6. It'll say `the authenticity of xxx can't be established` type `yes`
 7. It'll say root@localhost's password, the default is `alpine`
 
-## Few, we’ve completed getting ish, installing filza and you now know how to connect using ssh!
+## Few, we’ve completed getting ish, installing filza and you now know how to connect using ssh! Next up, we will learn more about using the Terminal.
 
-## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)
+## When you are ready, you can head over to [Chapter 2](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-2.md)
+
+## Remember, you can join our [Discord server](https://discord.gg/nX7c4VZnBu)
