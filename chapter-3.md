@@ -1,4 +1,4 @@
-# A world of ssh passwords and keys
+# Chapter 3 - A world of ssh passwords and keys
 
 ## Objectives for this lesson
 * Change the root and mobile user password

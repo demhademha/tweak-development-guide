@@ -1,7 +1,5 @@
-# Setting everything up
-
-## So you've read the [intro](https://github.com/demhademha/tweak-development-guide/blob/master/intro.md) and you've made it to the first chapter! Well done!
-## Let's get started already!
+# Chapter 1 - Setting everything up
+So you've read the [intro](https://github.com/demhademha/tweak-development-guide/blob/master/intro.md) and you've made it to the first chapter! Well done! Let's get started already!
 
 ## What we'll do in this chapter
 * Install a terminal application

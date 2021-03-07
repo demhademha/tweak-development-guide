@@ -1,7 +1,5 @@
-# Learning the terminal
-
-## Here's a joke for you
-Why do people always miss their planes? Keep reading to find the answer.
+# Chapter 2 - Learning the terminal
+Here's a joke for you: Why do people always miss their planes? Keep reading to find the answer.
 
 ## What is a terminal?
 A terminal is often a black screen with white text. It allows us to directly interact with our device, so that we don't need to use an app.
@@ -35,7 +33,7 @@ If we type  `cd ..` means navigate to the previous  directory.
 * The command `touch` means create a new file, so `touch /var/tweaklog.txt` will create a txt file called tweaklog.
 * The suffix (end of a file) is extremely important. As different suffixes be interpreted in different ways. For example, a file with a  suffix  of .swift means a swift file, a file with the suffix .m means an objective-c file and a file with .html would be a html file.
 
-Summary:
+## Summary:
 You should now be able to comfortably navigate terminal, using cd, you should be able to list what files are in your directory, you should know the definition of the word directory, you should be able to get which directory you are currently in, have an understanding of how to create a new file using touch and the significance of file extensions.  
 
 Why do people always miss their planes?
