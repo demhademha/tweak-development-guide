@@ -34,10 +34,13 @@ If we type  `cd ..` means navigate to the previous  directory.
 * The suffix (end of a file) is extremely important. As different suffixes be interpreted in different ways. For example, a file with a  suffix  of .swift means a swift file, a file with the suffix .m means an objective-c file and a file with .html would be a html file.
 
 ## Summary:
-You should now be able to comfortably navigate terminal, using cd, you should be able to list what files are in your directory, you should know the definition of the word directory, you should be able to get which directory you are currently in, have an understanding of how to create a new file using touch and the significance of file extensions.  
+You should now be able to comfortably navigate terminal, using cd, you should be able to list what files are in your directory, you should know the definition of the word directory, you should be able to get which directory you are currently in, have an understanding of how to create a new file using touch and the significance of file extensions. Next chapter will be going over setting up SSH keys & changing your root password.  
 
 Why do people always miss their planes?
 
 Because they spend too much time at the terminal\
 Get it?...
-## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)
+
+## When you are ready, you can head over to [Chapter 3](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-3.md)
+
+## Remember, you can join our [Discord server](https://discord.gg/nX7c4VZnBu)
