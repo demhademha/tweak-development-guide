@@ -134,5 +134,8 @@ If I try to login to my device without an ssh key, I get the following output: <
 `mobile@localhost: Permission denied (publickey,keyboard-interactive).` <br>
 As you can see, I can only login if I have the key.
 
-## You've finally changed your root and mobile passwords, understood how public and private keys work, generated a public and a private key, and transferred the public key to the device.
+## You've finally changed your root and mobile passwords, understood how public and private keys work, generated a public and a private key, and transferred the public key to the device. Next chapter will go over aliases & system variables.
+
+## When you are ready, you can head over to [Chapter 4](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-4.md)
+
 ## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)
