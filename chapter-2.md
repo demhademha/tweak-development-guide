@@ -40,3 +40,4 @@ Why do people always miss their planes?
 
 Because they spend too much time at the terminal\
 Get it?...
+## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)

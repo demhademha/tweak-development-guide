@@ -135,3 +135,4 @@ If I try to login to my device without an ssh key, I get the following output: <
 As you can see, I can only login if I have the key.
 
 ## You've finally changed your root and mobile passwords, understood how public and private keys work, generated a public and a private key, and transferred the public key to the device.
+## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)

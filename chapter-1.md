@@ -92,4 +92,4 @@ Apple's files app doesn't give us access to the full file system of our device. 
 
 ## Few, we’ve completed getting ish, installing filza and you now know how to connect using ssh!
 
-## Let's move on!
+## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)

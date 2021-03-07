@@ -36,3 +36,4 @@ mkdir ~/tweaks
 * Created aliases for github and tweaks
 * Made aliases persistent
 * Created a tweaks and a github folder
+## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)

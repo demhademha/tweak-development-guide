@@ -25,3 +25,4 @@ We next need to download a patched sdk. An sdk is a software development kit. It
 17. Once you've reconnected over ssh, type `echo $SDKROOT`, the output should be `/var/mobile/your_sdk`.
 
 ## We've now set up our compiler! In the next chapter, we'll actually code :)
+## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)
