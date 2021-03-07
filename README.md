@@ -5,7 +5,7 @@
 * [Chapter 1](https://github.com/demhademha/tweak-development-guide-/blob/master/chapter-1.md) Setting everything up
 * [Chapter 2](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-2.md) Learning the terminal
 * [Chapter 3](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-3.md) A world of ssh passwords and keys
-* [Chapter 4](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-4.md) aliases and folders 
-## I hope to do a lesson once every few days, so star and watch this repo so you know, 
+* [Chapter 5](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-5.md) setting up the compiler 
+## I hope to do a lesson once every week (on Sunday), so star and watch this repo so you know, 
 ## if there are any issues, please report them in the **issue tracker** and I gladly accept **pull requests**!       
  
