@@ -1,10 +1,22 @@
 # Chapter 5 - Setting up the compiler
 By the end of this lesson, you will have a working c compiler.
-## Before begining, unc0ver users and checkra1n users (not odysseyra1n users follow the following steps):
-1: ssh as root
-2 Type  `apt update && apt install -y sudo && chmod 0440 /etc/sudoers && visudo /etc/sudoers`
-3: un-comment **# Defaults targetpw** and **# ALL ALL=(ALL) ALL** and save the file
-**note:** to remove the comment, simply remove the `#`. **Do not** remove the full line  
+## Before begining, unc0ver users and checkra1n users (not odysseyra1n users) follow the following steps:
+1. SSH into your idevice as root
+2. Type `apt update && apt install -y sudo && chmod 0440 /etc/sudoers && visudo /etc/sudoers`
+3. At the end of the opened text file you will see the following:
+```
+## Uncomment to allow any user to run sudo if they know the password
+## of the user they are running the command as (root by default).
+# Defaults targetpw  # Ask for the password of the target user
+# ALL ALL=(ALL) ALL  # WARNING: only use this together with 'Defaults targetpw'
+
+## Read drop-in files from /etc/sudoers.d
+## (the '#' here does not indicate a comment)
+#includedir /etc/sudoers.d
+```
+4. Un-comment `# Defaults targetpw` and `# ALL ALL=(ALL) ALL` by simply removing the `#`. (do **not** remove the full line)
+5. Press `Ctrl+X`, type `Y` and hit enter to save the modified file.
+
 ## What is a compiler?
 A compiler is the piece of software which takes your source code, (the thing humans can read) and converts it into machine code (what the device understands). <br>
 The compiler we will be using is the clang compiler. It can be installed from your package manager. Alternatively, it can be installed directly from terminal by running `sudo apt update && sudo apt install clang` (make sure to ssh into your device first).
