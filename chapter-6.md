@@ -20,7 +20,7 @@ int main(void)
 ```
 Again, do not **copy and paste** actually type the code.
 
-5. Once you're done typing, save your changes by typing `ctrl` + `x` + `enter`
+5. Once you're done typing, save your changes by pressing `ctrl` + `x`, then `y` and `enter`
 6. Type the following: <br>
 `clang my-first-program.c -o my-first-program` to compile the c program
 7. If there is no output from your screen, that means you were successful. Otherwise, you have typed something wrong. Look again at program 6.1 and determine what you have done wrong.
