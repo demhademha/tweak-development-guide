@@ -64,4 +64,80 @@ Let's add comments to program 6.1 so you can understand what happened:
 /*We begin our first comment 
 The #include <stdio.h> is a Preprocessor directive. It tells clang to include the file stdio.h from your sdk (in other words, $SDKROOT/usr/include/stdio.h - if you want to read the file, do cat $SDKROOT/usr/include/stdio.h 
 the #include prevents us from manually copying and pasting the stdio file. Usually, the #include is placed at the top of our file
-stdio stands for standa
+stdio stands for standard input output - it provides us with many ways to get input and output.
+*/
+
+int main(void)
+/*This creates a function called main which returns an int value. 
+an int is a hole number, for example, 1, 77, -95
+9.9 is not an example of an int.
+A function holds lots of statements in it. You can think of it as bread - which holds the spread. Anything inside of the {} are part of the function - they belong to it. A statement is anything which has a  ; at its end - think of a ; as a .   
+The main function is where any c program begins. It tells the program to begin executing (running) from this function. Large programs may consist of hundreds of functions however, the program will only run from the main function. 
+The (void) part tells the main function that we do not want to pass it any parameter. Normally, we would pass parameters (which are values) between the () however, we are not going to in this example as they're not needed.*/
+{
+	/*This is where the main function begins; anything between the {} are part of the main function.*/
+	puts("Hello World!");
+	/*This is another function. The puts function (put string) places characters onto the screen. Anything placed within the "" will be placed on the screen. it is also a statement - it has a ; at the end of it.*/
+	return 0;
+/*This returns the value 0 to the main function. Normally, the value 0 indicates success. Any other value indicates failure.*/
+}
+//This ends the main function 
+```
+
+Another thing to note is that a single line comment can be written like this:
+```c
+puts("Hello World!"); // This is a function
+```
+Over this:
+```c
+puts("Hello World!");
+// This is a function
+```
+## Changing the output of our program 
+Program 6.1 prints `Hello World!` to the console. It would not be very practical if every program printed the same thing to the screen. <br>
+Take a look at program 6.3:
+## program 6.3:
+```c
+#include <stdio.h>
+int main(void)
+{
+	puts("Goodbye Cruel World!");
+/*As you can see, we've changed what is inside of the "" - this will cause the output of the program to change*/
+	return 0;
+	}
+```
+the output will be:
+`Goodbye Cruel World!`
+## Writing multiple lines of output 
+It may also be useful to place multiple lines of output on the screen. To do this, take a look at program 6.4 
+## program 6.4:
+```c
+#include <stdio.h>
+int main(void)
+{
+	puts("I am a line");
+	puts("I am also a line");
+	return 0;
+}
+The output of this program will be:
+```
+I am a line
+I am also a line
+```
+You should now understand what the extension is for a c program, what and how to use comments, what a Preprocessor directive is, what an int is, what a function is, what a statement is, what puts is and how it works and what return does.  
+## Exercises
+1. What is the file extension for a c file?
+2. What is a function? - can you think of an analogy to describe it?
+3. What function do all c programmes start from?
+4. What is an int?
+5. True or false: 1.5 is an int.
+6. What is the function of puts?
+7. What return value indicates success?
+8. Summarise what a comment is and how it works in no more than 100 words.
+9. Try to code program 6.1 without looking - memorise how to write it off by heart.
+10. Write program 6.1, inserting your own comments to explain what is happening on each line.
+11. Write a program which shows your name, the date and the time. The output should look like this:
+```
+MY name is demhademha
+Today it is Sunday
+The time right now is 13:00
