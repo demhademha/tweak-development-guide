@@ -55,10 +55,43 @@ Let's add comments to the original code snipit so you can understand what happen
 ```c
 #include <stdio.h>
 /*We begin our first comment 
-The #include <stdio.h> is a Preprocessor directive. It tells clang to include the file stdio.h from your sdk in (in other words, $SDKROOT/usr/include/stdio.h - if you want to read the file, do cat $SDKROOT/usr/include/stdio.h 
+The #include <stdio.h> is a Preprocessor directive. It tells clang to include the file stdio.h from your sdk  (in other words, $SDKROOT/usr/include/stdio.h - if you want to read the file, do cat $SDKROOT/usr/include/stdio.h 
 the #include prevents us from manually copying and pasting the stdio file. Usually, the #include is placed at the top of our file
 stdio stands for standard input output - it provides us with many ways to get input and output.
 */
 
 int main(void)
-/*Thi
+/*This creates a function called main which returns an int value. 
+an int is a hole number, for example, 1, 77, -95. 9.9 is not an example of an int.
+A function holds lots of statements in it. You can think of it as bread - which holds the spread. Anything inside of the {} are part of the function - they belong to it.
+The main function is where any c program begins. It tells the program to begin executing (running) from this function. Large programs may consist of hundreds of functions however, the program will only run from the main function. 
+The (void) part tells the main function that we do not want to give it any values. Normally, we would place values between the () however, we are not going to in this example as they're not needed.*/
+{
+	/*This is where the main function begins; anything between the {} are part of the main function.*/
+	puts("Hello World!");
+	/*This is another function. The puts function (put string) places characters onto the screen. Anything placed within the "" will be placed on the screen.*/
+	return 0;
+/*This returns the value 0 to the main function. Normally, the value 0 indicates success. Any other value indicates failure.*/
+}
+//This ends the main function 
+```
+Another thing to note is that a single lined comment can be written like this:
+```c
+puts("Hello World!"); // This is a function
+```
+Over this:
+```c
+puts("Hello World!");
+// This is a function
+```
+## exercises
+1. What is the file extension for a c file?
+2. What is a function? - can you think of an analogy to describe it?
+3. What function do all c programmes start from?
+4. what is an int?
+5. true or false: 1.5 is an int.
+6. what is the function of puts?
+7. what return value indicates success
+8. Summarise what a comment is and how it works in no more than 100 words
+9. Try to code program 6.1 without looking - memorise how to write it off by heart
+10. Write program 6.1, inserting  your own comments to explain what is happening on each line   
