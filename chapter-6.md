@@ -71,7 +71,7 @@ int main(void)
 /*This creates a function called main which returns an int value. 
 an int is a hole number, for example, 1, 77, -95
 9.9 is not an example of an int.
-A function holds lots of statements in it. You can think of it as bread - which holds the spread. Anything inside of the {} are part of the function - they belong to it. A statement is anything which has a  ; at its end - think of a ; as a .   
+A function holds lots of statements in it. You can think of it as bread - which holds the spread. Anything inside of the {} are part of the function - they belong to it. A statement is anything which has a ; at its end - think of a ; as a .
 The main function is where any c program begins. It tells the program to begin executing (running) from this function. Large programs may consist of hundreds of functions however, the program will only run from the main function. 
 The (void) part tells the main function that we do not want to pass it any parameter. Normally, we would pass parameters (which are values) between the () however, we are not going to in this example as they're not needed.*/
 {
@@ -95,8 +95,9 @@ puts("Hello World!");
 ```
 ## Changing the output of our program 
 Program 6.1 prints `Hello World!` to the console. It would not be very practical if every program printed the same thing to the screen. <br>
-Take a look at program 6.3:
-## program 6.3:
+Take a look at program 6.3.
+
+## Program 6.3:
 ```c
 #include <stdio.h>
 int main(void)
@@ -106,11 +107,13 @@ int main(void)
 	return 0;
 	}
 ```
-the output will be:
+The output will be:
 `Goodbye Cruel World!`
+
 ## Writing multiple lines of output 
-It may also be useful to place multiple lines of output on the screen. To do this, take a look at program 6.4 
-## program 6.4:
+It may also be useful to place multiple lines of output on the screen. To do this, take a look at program 6.4.
+
+## Program 6.4:
 ```c
 #include <stdio.h>
 int main(void)
@@ -119,12 +122,16 @@ int main(void)
 	puts("I am also a line");
 	return 0;
 }
+```
+
 The output of this program will be:
 ```
 I am a line
 I am also a line
 ```
-You should now understand what the extension is for a c program, what and how to use comments, what a Preprocessor directive is, what an int is, what a function is, what a statement is, what puts is and how it works and what return does.  
+
+You should now understand what the extension is for a c program, what and how to use comments, what a Preprocessor directive is, what an int is, what a function is, what a statement is, what `puts` is and how it works and what return does.
+
 ## Exercises
 1. What is the file extension for a c file?
 2. What is a function? - can you think of an analogy to describe it?
@@ -138,6 +145,6 @@ You should now understand what the extension is for a c program, what and how to
 10. Write program 6.1, inserting your own comments to explain what is happening on each line.
 11. Write a program which shows your name, the date and the time. The output should look like this:
 ```
-MY name is demhademha
+My name is demhademha
 Today it is Sunday
 The time right now is 13:00
