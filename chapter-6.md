@@ -4,9 +4,9 @@ We've spent the last five chapters getting to the point where we actually code! 
 ## Let's get started 
 1. Use your terminal app to ssh into your iDevice as the **mobile** user
 2. Type `cd /tmp` (this will place you in the temporary folder)
-3. Type `nano my-first-program.c` (this will create the file `my-first-program.c`) <br>
+3. Type `nano program-6.1.c` (this will create the file `program-6.1.c`) <br>
 Note the `.c`, this is very important. The suffix of a file is known as an extension. Different files have different extensions. For example, a text file may have the ending `.txt`, a photo file may have the ending `.png` and a website file may have the ending `.html` <br>
-The `.c` of the `my-first-program` tells the operating system that we want our file to be a c file. This is especially vital for our compiler (clang) as it will treat different extensions differently
+The `.c` of the `my-first-program` tells the operating system that we want our file to be a c file. This is especially vital for our compiler (clang) as it will treat different extensions differently.
 4. **Type** the following code. **Do not copy and paste** This is because by copying and pasting, you do not actively learn. <br>
 
 ## Program 6.1
@@ -19,14 +19,60 @@ int main(void)
 }
 ```
 Again, do not **copy and paste** actually type the code.
-
 5. Once you're done typing, save your changes by pressing `ctrl` + `x`, then `y` and `enter`
 6. Type the following: <br>
-`clang my-first-program.c -o my-first-program` to compile the c program
+`clang program-6.1.c -o program-6.1.c`
 7. If there is no output from your screen, that means you were successful. Otherwise, you have typed something wrong. Look again at program 6.1 and determine what you have done wrong.
-8. Finally, type `./my-first-program`. This will give you the output <br>
-`Hello World!`
-
+8. Finally, type `./program-6.1`. This will give you the output <br>
+`Hello World!` <br>
+So, you have just **compiled** your first program (remember that word). You first use **nano** to create the file (nano is your editor), you then typed your program, saved it, and compiled it. Remember that when you compile, you take the human readable code and turn it into machine code (the language the computer understands). To view this machine code, do: <br> 
+`cat ./program-6.1`
+The output may be something like this (however, it may be different): <br>
+```
+����
+    �� H__PAGEZERO�__TEXT� __text__TEXT@8@�__stubs__TEXTx
+                                                         �
+�__unwind_info__TEXT�H��__DATA_CONST�@�@__got__DATA_CONST��__DATA�@�@__la_symbol_ptr__DATA�__data__DA�H__LINKEDIT@�"? 00?h�D
+                                                                                                                            P� 
+                                                                                                                               /usr/lib/dyld?�H��-0
+`��F�dG12 *(�?@,?@@
+                   8?<
+                      /usr/lib/libSystem.B.dylib&)h�����{��C�R�����>��
+                                                                      ���
+                                                                         @���{A�����_� �0X�1 ��G�� �pX�P?���Hello World!@44y4
+                                                                                                                             �#Q@dyld_stub_binderQr
+�s@_puts�__mh_execute_header!main%�� �@" __mh_execute_header_main_putsdyld_stub_binder__dyld_private��
+                                                                                                      ��,?����
+                                                                                                              ��4
+                                                                                                                 a�Qm�=���P�ߜ�:��t5m��ʸ�������׷5���
+R�7�9���&�^{Ao'��=�S�kO�͕�{���=�S�kO�͕�{���=�S�kO�͕�{���=�            S�kO�͕�{���=�S�kO�͕�{��
+P�]�Q�%��5���=�S�kO�͕�{���=�S�kO�͕�{���=�S�kO�͕�{���=�S�kO�͕�{���sL�}�hj�K�}qf7թ��=�S�kO�͕�{���=�S�kO�͕�{���=�S�kO�͕�{�ÎY�>    OZ<,�3l6�!����
+                                                                                                                                      x��
+                                                                                                                                         da
+subject.CN
+*�H��cd��qqA<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>platform-application</key>
+        <true/>
+        <key>com.apple.private.security.no-container</key>
+        <true/>
+        <key>com.apple.private.skip-library-validation</key>
+        <true/>
+</dict>
+</plist>
+��
+  ��4 
+�}��&uf���Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,����Xo
+��f����kOX�|�|z�ڽ�H�,�#}��0Xd/"o���+67aI��F��Ci����Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�
+|z�ڽ�H�,�>y'�"�*N>�Ioh
+                      v���Y�ۥ�2��_�ݭ��Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,�FW�փc�
+y�g�\�W��{# �,�����%                                                                                                                               
+```
+As you can see, that would be extremely hard to learn and it would take forever to type. the **clang** compiler has taken our c code and converted it into that machine code! <br>
+Whenever you are told to compile your code, make sure to first use nano to type it and then clang to compile it with the command <br>
+`clang program_name.c -o program_name`
+The first part tels clang the name of the file to compile (our c file), the second command after the -o tells command what the name of the compiled program should be. If `-o` is not specified, then the program is called `a.out`    
 ## An explanation of program 6.1
 ### Comments 
 A comment is a very useful thing. In life, we can use comments for many different things. For example, a teacher may leave comments on a students work to help them improve, a friend might comment on your clothes to prevent you from getting embarrassed when you go out. <br>
@@ -70,8 +116,8 @@ stdio stands for standard input output - it provides us with many ways to get in
 int main(void)
 /*This creates a function called main which returns an int value. 
 an int is a hole number, for example, 1, 77, -95
-9.9 is not an example of an int.
-A function holds lots of statements in it. You can think of it as bread - which holds the spread. Anything inside of the {} are part of the function - they belong to it. A statement is anything which has a ; at its end - think of a ; as a .
+9.9 is not an example of an int as it holds a dev mail decimal value.
+A function holds lots of statements in it. You can think of it as bread - which holds the spread. Anything inside of the {} are part of the function - they belong to it. A statement is anything which has a ; at its end - think of a ; as a full stop in English - they tel you where the next sentence begins. .
 The main function is where any c program begins. It tells the program to begin executing (running) from this function. Large programs may consist of hundreds of functions however, the program will only run from the main function. 
 The (void) part tells the main function that we do not want to pass it any parameter. Normally, we would pass parameters (which are values) between the () however, we are not going to in this example as they're not needed.*/
 {
@@ -83,7 +129,7 @@ The (void) part tells the main function that we do not want to pass it any param
 }
 //This ends the main function 
 ```
-
+Go ahead and compile program 6.2! The output will be just the same as program 6.1. **Can** you try to write your own comments? Explaining what is happening on each line?     
 Another thing to note is that a single line comment can be written like this:
 ```c
 puts("Hello World!"); // This is a function
@@ -93,6 +139,11 @@ Over this:
 puts("Hello World!");
 // This is a function
 ```
+Comments can even be useful if we need to figure out what is wrong with a program, for example, they allow us to prevent certain statements from running, for example: <br>
+```c
+//puts("Hello World!");
+```
+  this will prevent the `puts` statement from running - if you compiled a program with puts commented out (a comment before puts began), then you would not get any output.                
 ## Changing the output of our program 
 Program 6.1 prints `Hello World!` to the console. It would not be very practical if every program printed the same thing to the screen. <br>
 Take a look at program 6.3.
@@ -107,7 +158,7 @@ int main(void)
 	return 0;
 	}
 ```
-The output will be:
+The output will be: <br>
 `Goodbye Cruel World!`
 
 ## Writing multiple lines of output 
@@ -148,3 +199,4 @@ You should now understand what the extension is for a c program, what and how to
 My name is demhademha
 Today it is Sunday
 The time right now is 13:00
+```
