@@ -7,7 +7,7 @@ We've spent the last five chapters getting to the point where we actually code! 
 3. Type `nano program-6.1.c` (this will create the file `program-6.1.c`) <br>
 Note the `.c`, this is very important. The suffix of a file is known as an extension. Different files have different extensions. For example, a text file may have the ending `.txt`, a photo file may have the ending `.png` and a website file may have the ending `.html` <br>
 The `.c` of the `my-first-program` tells the operating system that we want our file to be a c file. This is especially vital for our compiler (clang) as it will treat different extensions differently.
-4. **Type** the following code. **Do not copy and paste** This is because by copying and pasting, you do not actively learn. <br>
+4. **Type** the following code. **Do not copy and paste**. This is because by copying and pasting, you do not actively learn. <br>
 
 ## Program 6.1
 ```c
@@ -19,6 +19,7 @@ int main(void)
 }
 ```
 Again, do not **copy and paste** actually type the code.
+
 5. Once you're done typing, save your changes by pressing `ctrl` + `x`, then `y` and `enter`
 6. Type the following: <br>
 `clang program-6.1.c -o program-6.1.c`
@@ -69,10 +70,11 @@ subject.CN
                       v���Y�ۥ�2��_�ݭ��Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,����Xo��f����kOX�|�|z�ڽ�H�,�FW�փc�
 y�g�\�W��{# �,�����%                                                                                                                               
 ```
-As you can see, that would be extremely hard to learn and it would take forever to type. the **clang** compiler has taken our c code and converted it into that machine code! <br>
-Whenever you are told to compile your code, make sure to first use nano to type it and then clang to compile it with the command <br>
-`clang program_name.c -o program_name`
-The first part tels clang the name of the file to compile (our c file), the second command after the -o tells command what the name of the compiled program should be. If `-o` is not specified, then the program is called `a.out`    
+As you can see, that would be extremely hard to learn and it would take forever to type. The **clang** compiler has taken our c code and converted it into that machine code! <br>
+Whenever you are told to compile your code, make sure to first use nano to type it and then clang to compile it with the command: <br>
+`clang program_name.c -o program_name`<br>
+The first part tels clang the name of the file to compile (our c file), the second command after the `-o` tells clang what the name of the compiled program should be. If `-o` is not specified, then the program is called `a.out`
+
 ## An explanation of program 6.1
 ### Comments 
 A comment is a very useful thing. In life, we can use comments for many different things. For example, a teacher may leave comments on a students work to help them improve, a friend might comment on your clothes to prevent you from getting embarrassed when you go out. <br>
@@ -143,7 +145,7 @@ Comments can even be useful if we need to figure out what is wrong with a progra
 ```c
 //puts("Hello World!");
 ```
-  this will prevent the `puts` statement from running - if you compiled a program with puts commented out (a comment before puts began), then you would not get any output.                
+  this will prevent the `puts` statement from running - if you compiled a program with `puts` commented out (a comment before puts began), then you would not get any output.                
 ## Changing the output of our program 
 Program 6.1 prints `Hello World!` to the console. It would not be very practical if every program printed the same thing to the screen. <br>
 Take a look at program 6.3.
