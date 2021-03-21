@@ -166,5 +166,28 @@ As you can see in this example, we declare the variable, but we don't give it a 
 A constant is something which does not change. For example, the amount of planets in our solar system (there are 8 **please don't say that there are 9**). The amount of grams in a kilogram is constant (it is always 1000). 
 In our program, it may be useful to create a constant - this prevents any accidental manipulation by you or someone else. For example, the maximum amount of levels in a game can't change - the amount of levels is constant. 
 In c, we can declare a constant by simply placing a **const** in front of any value that is otherwise would be a variable. For example,
-`const planetsInOurSolarSystem = 8;
- 
+`const int  planetsInOurSolarSystem = 8;`
+This creates a const, with the type int, with the name `planetsInOurSolarSystem`. 
+If we try to change this, the program will fail: peruse program 7.6:
+## Program 7.6 - using const 
+```c
+#include <stdio.h>
+int main (void) 
+{
+const int planetsInOurSolarSystem = 8;
+//let's change this value 
+planetsInOurSolarSystem = 9; //well not really 
+printf("There are %i in our solar systen \n", planetsInOurSolarSystem);
+return 0;
+}
+```
+QWhen you compile this program, you should be met with something like this:
+program7.6.c:6:25: error: cannot assign to variable 'planetsInOurSolarSystem' with const-qualified type 'const int'
+planetsInOurSolarSystem = 9; //well not really 
+~~~~~~~~~~~~~~~~~~~~~~~ ^
+program7.6.c:4:11: note: variable 'planetsInOurSolarSystem' declared const here
+const int planetsInOurSolarSystem = 8;
+~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+```
+as you can see, when using const, we are unable to change the value; we get an error if we do so.  
