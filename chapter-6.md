@@ -22,7 +22,7 @@ Again, do not **copy and paste** actually type the code.
 
 5. Once you're done typing, save your changes by pressing `ctrl` + `x`, then `y` and `enter`
 6. Type the following: <br>
-`clang program-6.1.c -o program-6.1.c`
+`clang program-6.1.c -o program-6.1`
 7. If there is no output from your screen, that means you were successful. Otherwise, you have typed something wrong. Look again at program 6.1 and determine what you have done wrong.
 8. Finally, type `./program-6.1`. This will give you the output <br>
 `Hello World!` <br>
