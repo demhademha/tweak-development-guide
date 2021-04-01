@@ -39,11 +39,11 @@ Next, we need to download a patched iOS SDK. An SDK is short for a software deve
 11. You will see multiple files with the ending `.sdk` make a note of the one which corresponds closest to your iOS version. For example, my device is running iOS 14.2, so I will choose the iOS 14.4 sdk.
 12. Type `mv your_sdk_version ..` For example, `mv iPhoneOS14.4.sdk ..`
 13. Type `cd ..` and you should be back at `/var/mobile`
-14. Type rm -r master.zip sdks-master
+14. Type `rm -r master.zip sdks-master`
 15. Open your profile file: (refer to chapter 4 if you have forgotten how to do this)
 16. At the bottom, add the following line: `export SDKROOT=/var/mobile/your_sdk` for example, `export SDKROOT=/var/mobile/iPhoneOS14.4.sdk` 
 17. Restart your terminal session by disconnecting over ssh
 18. Once you've reconnected over ssh, type `echo $SDKROOT`, the output should be `/var/mobile/your_sdk`.
 
-## We've now set up our compiler! In the next chapter, we'll actually code :)
+## We've now set up our compiler! In the next [Chapter](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-6.md), we'll actually code :)
 ## Remember, you can join our [Discord server](https://discord.gg/nX7c4VZnBu)

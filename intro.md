@@ -18,4 +18,6 @@ For these lessons, I will **not** expect you to know any code, but that you are 
 11. We'll publish our tweak to github
 12. I'll teach you marketing 
 13. We’ll publish  our tweak to a repo like Packix
+
+## Let us start with [Chapter 1](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-1.md)
 ## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)
