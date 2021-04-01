@@ -96,7 +96,7 @@ It will then say: <br>
 Number of key(s) added: 1
 Now try logging into the machine, with: "ssh -p '2222' 'localhost'" and check to make sure that only the key(s) you wanted were added.
 ```
-3. Now, login normally over ssh, **you should not be asked for a password** but rather, for your ssh key pass phrase (if you set one).
+3. Now, login normally over ssh, **you should not be asked for a password** but rather, for your ssh key pass phrase (if you set one). If you get asked for the password, include the key by using `ssh -i /directory/key root@localhost`.
 4. Finally, do the same again, but this time do this for your mobile user.
 
 ## Making ssh remember our pass phrase
