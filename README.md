@@ -10,4 +10,4 @@
 * [Chapter 6](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-6.md) Your first c program
 * [Chapter ](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-7.md) Variables and constants
 ## I hope to do a lesson once every week (on Sunday), so star and watch this repo so you know, 
-## if there are any issues, please report them in the **issue tracker** and I gladly accept *pull requests* You may also join our [discord server](https://discord.gg/nX7c4VZnBu)
+## if there are any issues, please report them in the **issue tracker** and I gladly accept **pull requests** You may also join our [discord server](https://discord.gg/nX7c4VZnBu)

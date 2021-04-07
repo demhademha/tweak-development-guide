@@ -1,21 +1,8 @@
-# **Welcome!**
-## What is a tweak?
-Well, in the most simplest terms, a tweak allows us to modify our ios device, wether it's changing the colour of the date on the lock screen, allowing the icons to float about, or adding a control centre toggle that reboots the device: anything is possible. 
-
-For these lessons, I will **not** expect you to know any code, but that you are **jailbroken** (I will be using [Odyssey](https://theodyssey.dev]) but feel free to use other jailbreak tools such as [checkra1n](https://checkra.in)) and that you have a few GB of storage to spare.
-
-## Objectives for this course 
-1. I'll teach you how to use a terminal 
-2. We'll move onto learning some bash 
-3. We'll then move onto installing clang and setting up an sdk  
-4. We'll then move onto learning c
-5. We'll then move onto learning objective c
-6. We'll then move onto installing theos 
-7. We'll move onto decrypting apps, getting headers
-8. We'll learn what to hook, 
-9. We'll make another tweak
-10. The tweak development gets more complex 
-11. We'll publish our tweak to github
-12. I'll teach you marketing 
-13. We’ll publish  our tweak to a repo like Packix
-## Remember, you can join our [discord server](https://discord.gg/nX7c4VZnBu)
+# Welcome to the tweak development guide tutorial 
+You've arrived here to learn how to make tweaks and I'm here to deliver on that front. However, many other tutorials on reddit, on github, or whatever blog from 2011 are probably not useful - they expect you to know what an object, method, class and pointer is: then they show 10 lines of code (without explaining it and expect a large, juicy paypal donation.
+I'm different you see: I'll give you the rope (the tools to teach yourself how to code) and it's your job to use it however you want: you could be landing a shuttle on Jupiter, or sat in your basement eating doughnuts at 1 AM!
+I give examples (plenty of them), so you're not just looking at fancy font, but you're actively learning. On our discord, I post daily challenges, so you're always at the top of your game; you're forced to actively recall what you have learnt.    
+Most importantly, I'm a human: I promise that if you have a question, I'll do my best to answer it. I won't ridicule you if you're unsure about something. Unlike people with busy schedules (who could take weeks to respond), I'll ensure that I respond to your query as quick as possible.
+Furthermore, the discord server is somewhere where you can join other members of the community: these people are also following along with the course, meaning that they can help you, (or possibly), you could help someone else: perhaps you'll make a friend or two. The discord server is heavily moderated - we ensure that it is a safe environment for all of our members.
+Tap on this [link](https://discord.gg/nX7c4VZnBu) to join the discord server - we look forward to seeing you there. 
+ 
