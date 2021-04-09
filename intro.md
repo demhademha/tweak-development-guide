@@ -4,5 +4,8 @@ I'm different you see: I'll give you the rope (the tools to teach yourself how t
 I give examples (plenty of them), so you're not just looking at fancy font, but you're actively learning. On our discord, I post daily challenges, so you're always at the top of your game; you're forced to actively recall what you have learnt.    
 Most importantly, I'm a human: I promise that if you have a question, I'll do my best to answer it. I won't ridicule you if you're unsure about something. Unlike people with busy schedules (who could take weeks to respond), I'll ensure that I respond to your query as quick as possible.
 Furthermore, the discord server is somewhere where you can join other members of the community: these people are also following along with the course, meaning that they can help you, (or possibly), you could help someone else: perhaps you'll make a friend or two. The discord server is heavily moderated - we ensure that it is a safe environment for all of our members.
+To be able to develop anything, it takes time, dedication, consistency  and effort: without these, one will not succeed. Surely, there will be challenges - by completing them, you'll have mastery of what you do.
+This tutorial will aim to teach you how to use the CLI (command line interface), teach you c, teach you objective c and finally create tweaks. 
+Although this seems quite cumbersome the skills and the programming language  that you will learn will be vital to you as a developer.  
 Tap on this [link](https://discord.gg/nX7c4VZnBu) to join the discord server - we look forward to seeing you there. 
  
