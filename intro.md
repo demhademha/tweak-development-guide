@@ -7,5 +7,4 @@ Furthermore, the discord server is somewhere where you can join other members of
 To be able to develop anything, it takes time, dedication, consistency  and effort: without these, one will not succeed. Surely, there will be challenges - by completing them, you'll have mastery of what you do.
 This tutorial will aim to teach you how to use the CLI (command line interface), teach you c, teach you objective c and finally create tweaks. 
 Although this seems quite cumbersome the skills and the programming language  that you will learn will be vital to you as a developer.  
-Tap on this [link](https://discord.gg/nX7c4VZnBu) to join the discord server - we look forward to seeing you there. 
- 
+Tap on this [link](https://discord.gg/nX7c4VZnBu) to join the discord server - we look forward to seeing you there.
