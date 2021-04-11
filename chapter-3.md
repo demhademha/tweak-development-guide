@@ -18,8 +18,23 @@ As soon as a person has remote access over ssh, they can do whatever they want, 
 However, the most simplest way we can fix this is by changing both our root and mobile passwords.
 
 ## What is the difference between the root and the mobile user?
-On iOS devices, the main two users are root and mobile. Mobile has less privileges than root, meaning that you would have to run `sudo` in order to do higher privileged things. For example, if I tried to delete a file which is write protected as a mobile user, I might have to use `sudo` in order to achieve that. However, a root user is free to do what they want. But access by a malicious person could be troublesome for us, so let's secure the device.
-
+On iOS devices, the main two users are root and mobile. Mobile has less privileges than root, meaning that you would have to run `sudo` in order to do higher privileged things. For example, if I tried to delete a file which is write protected as a mobile user, I might have to use `sudo` in order to achieve that. However, a root user is free to do what they want. But access by a malicious person could be troublesome for us, so let's secure the device. <br>
+when connecting to our iOS device, we use ssh. Ssh requires a username and an adress to connect to. <br>
+If you have been following this tutorial by connecting to your device over ssh when using wifi, your command will look something like this:
+```
+ssh root@your_ip
+```
+The word `root` tells ssh what account you want to login as. on iOS, the most common are `mobile` and `root` - if you need to login as mobile, you would do something such as 
+```
+ssh mobile@your_ip
+```
+This will log you in directly as the `mobile` user. <br>
+if no username is provided, then ssh logs you in with the name of the current user. In ish, the default user is root, therefore,to login as root, a username is not required. <br>
+To login via ish, you would do: 
+```
+ssh mobile@localhost port
+```
+Where `port` is either `-p2222` or `-p44`  
 ## Changing the root password
 1. Make sure that you've logged in with ssh, see [chapter 1](https://github.com/demhademha/tweak-development-guide/blob/master/chapter-1.md)
 2. Type `passwd`. It will say:
@@ -53,10 +68,10 @@ Imagine I have a padlock which I give to you and I keep the key. You have the ab
 `ssh -v localhost` <br>
 The output should be something like this: <br>
 `OpenSSH_8.4p1, OpenSSL 1.1.1j 16 Feb 2021` <br>
-Note your ssh version: Mine is `8.4p1`. 
-3. Log into your device over ssh and again, log its ssh version: my output is the following: <br>
+Note your ssh version: Mine is `8.4p1`. Also note that this is your **host machine**
+3. Connect to your iOS device over ssh and again, log its ssh version: my output is the following: <br>
 `OpenSSH_8.4p1, OpenSSL 1.1.1i 8 Dec 2020` <br>
-Again, my ssh version is `8.4p1` and again, I will note this down somewhere.
+Again, my ssh version is `8.4p1` and again, I will note this down somewhere. Also note that this is the `iOS device`
 4. Type in `exit` to disconnect from the iOS device.  
 5. Now determine wether you will need to create an RSA key or an ed25519 key. If both of your ssh versions (the one on the host machine and the ios device) are greater than 6.5, type in <br>
 `ssh-keygen -t ed25519 -b length_of_the_key -C "your_email_@website.com"`. <br>
@@ -96,12 +111,12 @@ It will then say: <br>
 Number of key(s) added: 1
 Now try logging into the machine, with: "ssh -p '2222' 'localhost'" and check to make sure that only the key(s) you wanted were added.
 ```
-3. Now, login normally over ssh, **you should not be asked for a password** but rather, for your ssh key pass phrase (if you set one).
+3. Now, login to your iOS device normally over ssh, **you should not be asked for a password** but rather, for your ssh key pass phrase (if you set one).
 4. Finally, do the same again, but this time do this for your mobile user.
 
 ## Making ssh remember our pass phrase
 You may find it cumbersome to continuously enter your pass phrase. To fix this, let's make sure that ssh auto fills it in for us. 
-1. From terminal, type: <br>
+1. Open terminal and type the following: (do not connect to your iOS device)
 `eval "$(ssh-agent -s)"` <br> 
 The output should be something like this: <br>
 `Agent pid 37`. <br>
