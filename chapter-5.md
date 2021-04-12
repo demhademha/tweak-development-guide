@@ -21,10 +21,10 @@ By the end of this lesson, you will have a working c compiler.
 8. Press `Ctrl+X`, type `Y` and hit enter to save the modified file.
 
 ## What is a compiler?
-A compiler is the piece of software which takes your source code, (the thing humans can read) and converts it into machine code (what the device understands). <br>
-The compiler we will be using is the clang compiler. It can be installed from your package manager. Alternatively, it can be installed directly from terminal by running `sudo apt update` and then `sudo apt install clang` (make sure to ssh into your device first).
+A compiler is software which takes your source code, (the code that humans can read) and converts it into machine code (what the machines understands). <br>
+The compiler we will be using is the clang compiler (clang is the compiler for the C, C++, Objective C programming languages). It can be installed from your package manager. Alternatively, it can be installed directly from your terminal by running `sudo apt update` and then running `sudo apt install clang` (make sure to ssh into your device first).
 
-Next, we need to download a patched iOS SDK. An SDK is short for a software development kit. It is what we need to develop software for our iOS device (for example, changing the UI, or making an app).
+Next, we need to download a patched iOS SDK. An SDK is short for a software development kit. We need it to develop software for our iOS device (for example, changing the UI, or making an app).
 
 1. SSH into your idevice
 2. Type `sudo apt update` type in your **password** and `y` if asked
