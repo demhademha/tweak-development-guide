@@ -111,14 +111,14 @@ Let's add comments to program 6.1 so you can understand what happened:
 #include <stdio.h>
 /*We begin our first comment 
 The #include <stdio.h> is a Preprocessor directive. It tells clang to include the file stdio.h from your sdk (in other words, $SDKROOT/usr/include/stdio.h - if you want to read the file, do cat $SDKROOT/usr/include/stdio.h 
-the #include prevents us from manually copying and pasting the stdio file. Usually, the #include is placed at the top of our file
+the #include saves  us from manually copying and pasting the stdio file. Usually, the #include is placed at the top of our file
 stdio stands for standard input output - it provides us with many ways to get input and output.
 */
 
 int main(void)
 /*This creates a function called main which returns an int value. 
 an int is a hole number, for example, 1, 77, -95
-9.9 is not an example of an int as it holds a dev mail decimal value.
+9.9 is not an example of an int as it holds a decimal value.
 A function holds lots of statements in it. You can think of it as bread - which holds the spread. Anything inside of the {} are part of the function - they belong to it. A statement is anything which has a ; at its end - think of a ; as a full stop in English - they tel you where the next sentence begins. .
 The main function is where any c program begins. It tells the program to begin executing (running) from this function. Large programs may consist of hundreds of functions however, the program will only run from the main function. 
 The (void) part tells the main function that we do not want to pass it any parameter. Normally, we would pass parameters (which are values) between the () however, we are not going to in this example as they're not needed.*/
@@ -145,7 +145,7 @@ Comments can even be useful if we need to figure out what is wrong with a progra
 ```c
 //puts("Hello World!");
 ```
-  this will prevent the `puts` statement from running - if you compiled a program with `puts` commented out (a comment before puts began), then you would not get any output.                
+  this will prevent the `puts` statement from running - if you compiled a program with `puts` commented out, then you would not get any output.                
 ## Changing the output of our program 
 Program 6.1 prints `Hello World!` to the console. It would not be very practical if every program printed the same thing to the screen. <br>
 Take a look at program 6.3.
@@ -158,7 +158,7 @@ int main(void)
 	puts("Goodbye Cruel World!");
 /*As you can see, we've changed what is inside of the "" - this will cause the output of the program to change*/
 	return 0;
-	}
+}
 ```
 The output will be: <br>
 `Goodbye Cruel World!`
